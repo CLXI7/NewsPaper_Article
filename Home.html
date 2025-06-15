@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manavalan & Sons</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+
+    }
+header {
+  background-color: transparent;
+background: #222;
+color:white;
+padding-top:10px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1000px;
+  margin-left: 13%;
+}
+
+.logo {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1.2em;
+  color: gray;
+}
+
+    nav {
+      background: #333;
+      color: #fff;
+      padding: 10px 30px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+.container p{
+text-align:justify;
+}
+    .meta {
+      color: #666;
+      font-size: 0.9em;
+      margin-bottom: 20px;
+    }
+    div img {
+	float:left;
+      width: 500px;
+	height:auto;
+	margin-right:20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  <div class="header-container">
+    <img src="logo3.png" alt="Logo" class="logo">
+    <div class="header-text">
+      <h1>Manavalan & Sons</h1>
+      <p>Your Trusted Source for Local News</p>
+    </div>
+  </div>
+</header>
+
+
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">World</a>
+    <a href="#">Science</a>
+    <a href="#">Technology</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Fanboy From Kerala Meets Neymar Jr. in Dream Moment at eFootball Championship</h1>
+    <p class="meta">By Clive Lawrence Xavier | Published on June 15, 2025</p>
+    <img src="C:\Users\pxlaw\Downloads\jishnu.png" alt="fanboy Jishu with his idol Neymar Jr." />
+    
+    <p>
+      <b>Thykoodam, Kerala:</b> In a heartwarming moment that thrilled both football and gaming fans, Jishnu P. B., a young enthusiast from Thykoodam, Kerala, met his idol, the legendary Brazilian footballer Neymar Jr., during the grand finale of an international eFootball Championship held in Rio de Janeiro.
+    </p>
+
+    <p>
+      Jishnu, a die-hard Neymar fan and a rising talent in the eFootball scene, earned this once-in-a-lifetime opportunity after clinching the top spot in the “Play for Passion” eFootball tournament hosted by a global esports organization. The competition saw thousands of participants from across the world, with Jishnu emerging as the surprise sensation of the event.
+    </p>
+
+    <p>
+      The emotional moment was captured at the iconic Maracanã Stadium, where Neymar personally presented Jishnu with an autographed Brazil jersey. The football star, known for his flair both on and off the field, shared a light moment with the young fan, posing for pictures and signing memorabilia.
+    </p>
+<div id="moreText" style="display: none;">
+    <p>
+      “I never imagined I would meet Neymar in real life,” said Jishnu. “It’s more than a dream come true. He’s been my hero ever since I started watching football.”
+    </p>
+
+    <p>
+      Neymar, who expressed admiration for the growing global eFootball scene, praised Jishnu’s skill and composure during the competition. “It’s amazing to see the passion from young players like him. This is what football is all about—spreading joy, dreams, and inspiration,” he said.
+    </p>
+
+	<p>
+		The event marks a significant intersection between traditional sports and esports, showing how digital platforms can create real-world opportunities for young talents worldwide.
+	</p>
+
+	<p>
+As Jishnu returns home to Kerala, he does so not only as a champion gamer but also as a young fan who lived his dream—meeting his idol and holding a signed jersey from the legend himself.
+	</p>
+</div>
+<button onclick="toggleReadMore()" style="background-color: #0066cc; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer;">
+    Read more
+  </button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Manavalan & Sons | All Rights Reserved</p>
+  </footer>
+
+</body>
+<script>
+  function toggleReadMore() {
+    const moreText = document.getElementById("moreText");
+    const button = event.target;
+
+    if (moreText.style.display === "none") {
+      moreText.style.display = "block";
+      button.textContent = "Read less";
+    } else {
+      moreText.style.display = "none";
+      button.textContent = "Read more";
+    }
+  }
+</script>
+</html>
